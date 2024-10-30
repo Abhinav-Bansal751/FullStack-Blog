@@ -9,11 +9,14 @@ function App() {
 
   return (
     <>
+     <div className="flex flex-col min-w-full">
+
   <Navbar />
   <Routes>
   <Route exact index element={<Home />} />
   </Routes>
   <Footer />
+     </div>
     </>
   )
 }

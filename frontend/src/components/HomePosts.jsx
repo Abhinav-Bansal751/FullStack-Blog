@@ -2,19 +2,29 @@ import React from 'react'
 
 const HomePosts = () => {
   return (
-    <div className='w-[80%]  bg-slate-500'>
-        <div className=' flex '>
 
-            <div className='flex flex-col w-[90%]'>
-            <h1 className='text-2xl'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, nulla.  Heading here</h1>
-            <p className=''>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nisi fuga enim neque reiciendis necessitatibus, totam dignissimos ad dolor voluptatum.</p>
-    </div>
 
-            <div className='bg-red-400'>
-            <img  className='w-1/2 h-5.5 ml-2 ' src='https://img.freepik.com/free-vector//data-security-technology-background-vector-blue-tone_53876-112201.jpg?t=st=1730310944~exp=1730314544~hmac=90b0aba220e37c84e2916da38b7debc46b41298973f9db8a27597cf636a79b11&w=1060'></img>
+        <div className=' flex mt-8 space-x-4 '>
+
+                {/* left div */}
+
+                <div className=' w-[20%]  h-[200px] flex justify-center items-center'>
+            <img  
+            className='h-full w-full object cover' 
+            src='https://www.bleepstatic.com/content/hl-images/2024/08/12/thumb/170x170_north-korean-hackers.jpg' />
             </div>
 
-        
+
+                {/* right div */}
+           
+            <div className='flex flex-col w-[65%] '>
+            <h1 className='text-xl  text-left font-bold md:mb-2 mb-1 md:text-2xl'>North Korean govt hackers linked to Play ransomware attack</h1>
+            <div className='flex space-x-2 text-gray-500'>
+                <p>10/31/2024</p>
+                <p>12:11 AM IST</p>
+                {/* to add date and time  */}
+            </div>
+            <p className='text-base text-left mt-2 sm:mt-4 md:text-lg'>The North Korean state-sponsored hacking group tracked as 'Andariel' has been linked to the Play ransomware operation, using the RaaS to work behind the scenes and evade sanctions.</p>
     </div>
     </div>
   )
