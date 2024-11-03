@@ -12,9 +12,8 @@ const Home = () => {
         <HomePosts />
         <HomePosts />
         <HomePosts />
-        <HomePosts />
     </div>
-    <Footer />
+    {/* <Footer /> */}
     </>
   )
 }
