@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Login from './components/Login'
 import Register from './components/Register'
+import PostDetails from './pages/postDetails'
 
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
   <Route exact index element={<Home />} />
   <Route exact path='/login' element={<Login />} />
   <Route exact path='/register' element={<Register />} />
+  <Route exact path='/posts/post/:id' element={<PostDetails />} />
   </Routes>
-  <Footer />
+  
      </div>
     </>
   )
