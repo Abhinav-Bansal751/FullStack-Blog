@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Login from './components/Login'
 import Register from './components/Register'
 import PostDetails from './pages/postDetails'
+import CreatePosts from './pages/CreatePosts'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   <Route exact path='/login' element={<Login />} />
   <Route exact path='/register' element={<Register />} />
   <Route exact path='/posts/post/:id' element={<PostDetails />} />
+  <Route exact path='/write' element={<CreatePosts />} />
   </Routes>
   
      </div>
